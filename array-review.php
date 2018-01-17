@@ -21,3 +21,11 @@ function addToArray($animals, $str) {
     }
     return $animals;
 }
+
+//Test functions
+printArray($animals); echo '<br>';
+$animals = addToArray($animals, 'goat');
+printArray($animals);
+echo '<br>';
+$animals = addToArray($animals, 'Boa');
+printArray($animals);
