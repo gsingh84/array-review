@@ -29,3 +29,15 @@ printArray($animals);
 echo '<br>';
 $animals = addToArray($animals, 'Boa');
 printArray($animals);
+
+//PART II
+echo '<h3>Part II</h3>';
+
+//cupcake flavors
+$flavors = array("grasshopper"=>"The Grasshopper", "maple"=>"Whiskey Maple Bacon",
+    "carrot"=>"Carrot Walnut","caramel"=>"Salted Caramel Cupcake","velvet"=>"Red Velvet",
+    "lemon"=>"Lemon Drop", "tiramisu"=>"Tiramisu");
+
+foreach($flavors as $key => $val) {
+    echo "<input type='checkbox' name='flavors[]' value='$key'> $val<br>";
+}
