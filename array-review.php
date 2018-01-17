@@ -12,3 +12,12 @@ function printArray($animals) {
         echo $animal.' ';
     }
 }
+
+//add elements into the array
+function addToArray($animals, $str) {
+    echo "adding $str...<br>";
+    if(!in_array(strtolower($str), $animals)) {
+        array_push($animals, $str);
+    }
+    return $animals;
+}
